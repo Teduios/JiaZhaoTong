@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZZDailyView">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UST-l9-RFy">
+                    <rect key="frame" x="0.0" y="25" width="166" height="102"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5月28日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS7-ff-En4">
+                    <rect key="frame" x="0.0" y="0.0" width="166" height="25"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20° ~ 30°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cle-wQ-DXL">
+                    <rect key="frame" x="0.0" y="127" width="166" height="25"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cle-wQ-DXL" firstAttribute="top" secondItem="UST-l9-RFy" secondAttribute="bottom" id="7Rp-O2-1Ra"/>
+                <constraint firstAttribute="trailing" secondItem="hS7-ff-En4" secondAttribute="trailing" id="7aT-SJ-x5i"/>
+                <constraint firstItem="UST-l9-RFy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9fI-ot-fOT"/>
+                <constraint firstAttribute="trailing" secondItem="UST-l9-RFy" secondAttribute="trailing" id="A0Z-bc-Fuw"/>
+                <constraint firstItem="UST-l9-RFy" firstAttribute="top" secondItem="hS7-ff-En4" secondAttribute="bottom" id="BC1-Qr-v6X"/>
+                <constraint firstItem="hS7-ff-En4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IGV-Df-EQ4"/>
+                <constraint firstItem="cle-wQ-DXL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JaD-Yz-qAX"/>
+                <constraint firstAttribute="bottom" secondItem="cle-wQ-DXL" secondAttribute="bottom" id="WWq-vn-ss2"/>
+                <constraint firstItem="cle-wQ-DXL" firstAttribute="top" secondItem="UST-l9-RFy" secondAttribute="bottom" id="ZuQ-Rr-az7"/>
+                <constraint firstItem="UST-l9-RFy" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="2/3" id="cpq-NQ-BTG"/>
+                <constraint firstAttribute="trailing" secondItem="cle-wQ-DXL" secondAttribute="trailing" id="d7X-bG-mS7"/>
+                <constraint firstItem="UST-l9-RFy" firstAttribute="top" secondItem="hS7-ff-En4" secondAttribute="bottom" id="jpe-PZ-Qxb"/>
+                <constraint firstItem="hS7-ff-En4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kBC-AO-zDa"/>
+                <constraint firstItem="cle-wQ-DXL" firstAttribute="height" secondItem="hS7-ff-En4" secondAttribute="height" id="zsL-kz-fEh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="hS7-ff-En4" id="esd-XI-veG"/>
+                <outlet property="image" destination="UST-l9-RFy" id="zzI-Hy-xWX"/>
+                <outlet property="tmpLabel" destination="cle-wQ-DXL" id="eHK-BL-rP6"/>
+            </connections>
+            <point key="canvasLocation" x="151" y="216"/>
+        </view>
+    </objects>
+</document>
